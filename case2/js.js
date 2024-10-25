@@ -1,5 +1,6 @@
 var element =document.getElementsByTagName("div")
 let arr =[]
+var myInterval
 
 document.getElementById("randomColor").addEventListener("click", function () {
 
@@ -18,14 +19,24 @@ document.getElementById("randomColor").addEventListener("click", function () {
 })
 
 
-setInterval(()=>{
-    let lastIndex=arr.pop();
-    arr.unshift(lastIndex);
-    console.log(arr)
+document.getElementById("start").addEventListener("click", function () {
+     myInterval=setInterval(() => {
+        let lastIndex = arr.pop();
+        arr.unshift(lastIndex);
+        console.log(arr)
 
-    for (let j = 0; j <arr.length; j++) {
-        document.getElementsByTagName("div")[j].style.backgroundColor=arr[j];
+        for (let j = 0; j < arr.length; j++) {
+            document.getElementsByTagName("div")[j].style.backgroundColor = arr[j];
 
-    }
+        }
 
-},3000)
+    }, 3000)
+
+
+})
+
+
+document.getElementById("end").addEventListener("click", function () {
+    clearInterval(myInterval);
+
+})

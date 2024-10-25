@@ -42,3 +42,24 @@ section>img{
     font-size: 2.5em;
     font-weight: bold;
 }
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40em;
+    right: 0;
+    left: 0;
+    margin: 0 50px;
+}
+#button>button{
+    width: 8em;
+    height: 2.5em;
+    border-radius:5px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    margin: 1em;
+}

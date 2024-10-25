@@ -3,7 +3,7 @@ body{
     background-color: #0e3246;
 }
 
-section{
+#sec1{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 80%;
@@ -41,21 +41,25 @@ div{
     margin-top: 12em;
 }
 
-#randomColor{
+
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35em;
+    right: 0;
+    left: 0;
+    margin: 0 50px;
+}
+#button>button{
     width: 8em;
     height: 2.5em;
     border-radius:5px;
-    position: absolute;
-    top: 40em;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
     font-weight: 600;
     background-color: black;
     color: white;
     font-size: 1em;
-
-
-
+    margin: 1em;
 }
